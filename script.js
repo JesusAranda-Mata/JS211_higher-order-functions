@@ -19,13 +19,13 @@ const newFun = () => {
     console.log(Object.keys(obj));
 }
 
-newFun()
+//newFun()
 
 const newerFun = () => {
     console.log(Object.entries(obj));
 }
 
-newerFun()
+//newerFun()
 
 const newObj = [
 
@@ -49,12 +49,18 @@ const newObj = [
 }
 ];
 
-const newNewerFun = () => {
-    for(let i = 0; newObj.length; i++){
-        if(newObj[i].Object.values(birthDate) % 2 == 0){
-            console.log(newObj[i].Object.values(birthDate));
-        }
+const newNewFun = () => {
+for(let i = 0; i < newObj.length; i++){
+    //console.log(i);
+    let bDay = newObj[i]
+    //console.log(`Before the if ${bDay['birthDate']}`);
+    //console.log(`Looking at birth dates: ${bDay['birthDate']}`);
+    let birthday = bDay['birthDate']
+    if (birthday % 2 !== 0) {
+        console.log(`Odd birth year(s) ${bDay['birthDate']}`);
     }
 }
+}
 
-newNewerFun()
+
+newNewFun(newObj)
