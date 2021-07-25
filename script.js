@@ -104,3 +104,21 @@ Pseudo code
 JavaScript code in a Repl.it for both functions
 Turn in URL of Repl.it
 ----------------*/
+
+//Uses the exact same code as reduce produces the same results
+
+let males = people.find(function(element, index){
+    if(element.gender == "male"){
+    console.log("Found males: " + element["firstName"])
+    console.log(element);
+    return true
+    } 
+})
+
+let malePosition = people.findIndex(function(element, index){
+    if(element.gender == "male"){
+    console.log("Found position of male: " + element["firstName"])
+    console.log(element);
+    return true
+    } 
+})
